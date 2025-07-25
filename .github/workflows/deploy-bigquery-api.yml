@@ -79,7 +79,7 @@ jobs:
             --min-instances 1 \
             --timeout 900 \
             --concurrency 80 \
-            --set-env-vars "ENVIRONMENT=production,PORT=8080,LOG_LEVEL=INFO,GCP_PROJECT_ID=gama-454419,FIREBASE_PROJECT_ID=${{ secrets.FIREBASE_PROJECT_ID }},BIGQUERY_LOCATION=US,ALLOWED_ORIGINS=https://your-domain.com,SUPER_ADMIN_DOMAINS=be-luma.com" \
+            --set-env-vars "ENVIRONMENT=production,LOG_LEVEL=INFO,GCP_PROJECT_ID=gama-454419,FIREBASE_PROJECT_ID=${{ secrets.FIREBASE_PROJECT_ID }},BIGQUERY_LOCATION=US,ALLOWED_ORIGINS=https://your-domain.com,SUPER_ADMIN_DOMAINS=be-luma.com" \
             --set-secrets "FIREBASE_SERVICE_ACCOUNT_KEY=${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}:latest"
 
       - name: Get service URL
